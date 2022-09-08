@@ -23,6 +23,16 @@ module.exports = {
         test: /\.css$/,
         use: ["style-loader", "css-loader"],
       },
+      {
+        test: /\.scss$/,
+        use: [{
+          loader: "style-loader"
+        }, {
+          loader: "css-loader"
+        }, {
+          loader: "sass-loader"
+        }]
+      }
     ],
   },
   // Thêm [chunkhash] để thêm hash vào file tránh bị cache bởi cdn nếu trùng file name.
