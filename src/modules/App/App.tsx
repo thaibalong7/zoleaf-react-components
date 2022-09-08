@@ -1,9 +1,17 @@
-import React from "react";
-
-import { FC } from "react";
+import React, { FC } from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
+import Home from "../home/containers/home";
 
 const App: FC = () => {
-  return <div>Hello world 123</div>;
+  return <Router>
+    <Routes>
+      <Route path="/" element={<Home />} />
+    </Routes>
+  </Router>
 };
 
 export default App;
