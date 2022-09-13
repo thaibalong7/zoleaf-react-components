@@ -1,8 +1,10 @@
 import React, { FC } from "react";
+import { get } from 'vendors/lodash';
 import './styles.scss';
 
 const Home: FC = () => {
-  return <div className="home">Hello world HOME</div>;
+  const a = get({}, '');
+  return <div className="home">Hello world HOME TEST {a}</div>;
 };
 
 export default Home;

@@ -48,7 +48,7 @@ module.exports = {
     port: 3000,
     historyApiFallback: true,
     static: {
-      directory: path.resolve(__dirname, "public", "index.html"),
+      directory: path.resolve(__dirname, "public"),
       serveIndex: true,
       watch: true,
     },
