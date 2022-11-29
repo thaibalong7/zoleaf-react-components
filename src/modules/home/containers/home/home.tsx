@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import { get } from 'vendors/lodash';
+// import _ from 'lodash';
 import './styles.scss';
 
 const Home: FC = () => {

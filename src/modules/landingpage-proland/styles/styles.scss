@@ -1,0 +1,119 @@
+@import "./_variables.scss";
+
+/* ==== @GLOBAL CSS =====  */
+body,
+html {
+  font-family: "Poppins", sans-serif;
+  color: #222;
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+.btn {
+  transition: all ease 0.6s;
+  &:hover {
+    background-color: var(--btn-hover) !important;
+    color: var(--btn-hover-contrast) !important;
+  }
+}
+/* ==== / END / =====  */
+
+/* ==== @HEADER CSS =====  */
+.header {
+  position: relative;
+  background-position: bottom;
+  .header__nav__container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: all linear 0.4s;
+
+    nav {
+      padding: 20px 0px;
+
+      .row {
+        width: inherit;
+      }
+
+      .nav-link {
+        font-weight: 500;
+      }
+
+      .header__logo-img {
+        transition: all linear 0.4s;
+        max-height: 55px;
+      }
+
+      .header__nav {
+        justify-content: flex-end;
+
+        li {
+          padding: 0 8px;
+          margin-right: 8px;
+          text-transform: uppercase;
+        }
+      }
+
+      .header__pre-order-btn {
+        background-color: var(--secondary-color);
+        color: var(--secondary-color-contrast);
+        border-radius: 30px;
+        padding: 6px 32px;
+      }
+    }
+
+    &.header__nav--scrolled {
+      background-color: #fff;
+      nav {
+        .header__logo-img {
+          max-height: 40px;
+        }
+      }
+    }
+  }
+
+  .header__banner {
+    padding-top: 184px;
+    .container {
+      text-align: center;
+    }
+
+    h1 {
+      color: rgb(55, 64, 72);
+      font-size: 79px;
+      line-height: 79px;
+      letter-spacing: -3px;
+      font-weight: 600;
+      margin-bottom: 32px;
+    }
+
+    p {
+      max-width: 780px;
+      margin: 0 auto 40px;
+      color: rgb(138, 144, 149);
+      font-size: 27px;
+      line-height: 41px;
+      letter-spacing: -0.2px;
+      font-weight: 300;
+    }
+
+    .header__banner__playvideo-btn {
+      margin-bottom: 72px;
+      padding: 16px 72px;
+      background-color: var(--primary-color);
+      color: var(--primary-color-contrast);
+      font-size: 27px;
+      font-weight: 500;
+      border-radius: 60px;
+    }
+
+    .header__banner__watch-img {
+      padding-bottom: 64px;
+    }
+  }
+}
+/* ==== / END / =====  */

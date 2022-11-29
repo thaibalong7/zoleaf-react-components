@@ -32,7 +32,13 @@ module.exports = {
         }, {
           loader: "sass-loader"
         }]
-      }
+      },
+      {
+        test: /\.(jpg|png)$/,
+        use: {
+          loader: 'url-loader',
+        },
+      },
     ],
   },
   // Thêm [chunkhash] để thêm hash vào file tránh bị cache bởi cdn nếu trùng file name.
